@@ -6,7 +6,7 @@ urlpatterns = [
     path('', views.home, name='home'),
 
     # Ruta para ver todos los gastos (y pagos asociados)
-    path('ver/', views.ver_gastos, name='ver_gastos'),
+     path('ver_gastos/', views.ver_gastos, name='ver_gastos'),
 
     # Ruta para generar un nuevo gasto
     path('generar/', views.generar_gasto, name='generar_gasto'),
