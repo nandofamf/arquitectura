@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Gastos</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+
+    <div style="width: 90%; max-width: 1200px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+        
+        <!-- Encabezado -->
+        <header style="background: linear-gradient(135deg, #007bff, #0056b3); color: white; text-align: center; padding: 20px;">
+            <h1 style="margin: 0; font-size: 2.5rem;">Aplicación de Gastos</h1>
+            <p style="margin: 10px 0 0; font-size: 1.2rem;">Gestiona tus gastos y pagos de forma profesional.</p>
+        </header>
+        
+        <!-- Contenido principal -->
+        <main style="padding: 20px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                
+                <!-- Tarjeta 1: Ver Gastos -->
+                <a href="{% url 'ver_gastos' %}" style="text-decoration: none; color: inherit;">
+                    <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px; padding: 20px; width: calc(30% - 20px); min-width: 280px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+                        <h2 style="margin: 0; font-size: 1.5rem; color: #0056b3;">Ver Pagos</h2>
+                        <p style="margin: 10px 0 0; font-size: 1rem; color: #666;">Consulta el listado completo de pagos registrados.</p>
+                    </div>
+                </a>
+                
+                <!-- Tarjeta 2: Generar Gasto -->
+                <a href="{% url 'generar_gasto' %}" style="text-decoration: none; color: inherit;">
+                    <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px; padding: 20px; width: calc(30% - 20px); min-width: 280px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+                        <h2 style="margin: 0; font-size: 1.5rem; color: #0056b3;">Generar Gasto</h2>
+                        <p style="margin: 10px 0 0; font-size: 1rem; color: #666;">Registra un nuevo gasto para tu departamento.</p>
+                    </div>
+                </a>
+                
+                <!-- Tarjeta 3: Registrar Pago -->
+                <a href="{% url 'registrar_pago' %}" style="text-decoration: none; color: inherit;">
+                    <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px; padding: 20px; width: calc(30% - 20px); min-width: 280px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+                        <h2 style="margin: 0; font-size: 1.5rem; color: #0056b3;">Registrar Pago</h2>
+                        <p style="margin: 10px 0 0; font-size: 1rem; color: #666;">Registra un pago de forma sencilla y rápida.</p>
+                    </div>
+                </a>
+                
+            </div>
+        </main>
+        
+        <!-- Pie de página -->
+        <footer style="text-align: center; padding: 10px; background: #f4f4f9; border-top: 1px solid #ddd; font-size: 0.9rem; color: #999;">
+            <p>Aplicación de Gastos &copy; 2024. Todos los derechos reservados.</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>
